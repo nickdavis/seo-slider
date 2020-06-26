@@ -72,7 +72,7 @@ function seo_slider_register_metabox() {
 	// Add text color field.
 	$slides_group->add_group_field( $group_field_id, array(
 		'name'    => __( 'Text color', 'seo-slider' ),
-		'id'      => $prefix . 'text',
+		'id'      => $prefix . 'text_color',
 		'type'    => 'colorpicker',
 		'default' => apply_filters( 'seo_slider_default_text', '#ffffff' ),
 		'options' => array(
