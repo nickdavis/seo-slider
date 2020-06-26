@@ -124,6 +124,14 @@ function seo_slider_register_metabox() {
 		),
 	) );
 
+	// Add text width field.
+	$slider_settings->add_field( array(
+		'name'            => __( 'Text width (px)', 'seo-slider' ),
+		'id'              => $prefix . 'text_width',
+		'type'            => 'text_small',
+		'sanitization_cb' => 'sanitize_text_field',
+	) );
+
 	// Add title field.
 	$slider_settings->add_field( array(
 		'name' => 'Display settings',
