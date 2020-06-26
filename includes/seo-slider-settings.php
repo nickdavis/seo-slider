@@ -80,6 +80,14 @@ function seo_slider_register_metabox() {
 		),
 	) );
 
+	// Add text width field.
+	$slides_group->add_group_field( $group_field_id, array(
+		'name'            => __( 'Text width (px)', 'seo-slider' ),
+		'id'              => $prefix . 'text_width',
+		'type'            => 'text_small',
+		'sanitization_cb' => 'sanitize_text_field',
+	) );
+
 	/**
 	 * Initiate the metabox for slider settings.
 	 *
