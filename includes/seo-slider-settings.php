@@ -58,6 +58,28 @@ function seo_slider_register_metabox() {
 		'sanitization_cb' => apply_filters( 'seo_slider_wysiwyg_sanitization', 'wp_kses_post' ),
 	) );
 
+	// Add overlay color field.
+	$slides_group->add_group_field( $group_field_id, array(
+		'name'    => __( 'Overlay color', 'seo-slider' ),
+		'id'      => $prefix . 'overlay',
+		'type'    => 'colorpicker',
+		'default' => apply_filters( 'seo_slider_default_overlay', 'rgba(10,20,30,0.2)' ),
+		'options' => array(
+			'alpha' => true,
+		),
+	) );
+
+	// Add text color field.
+	$slides_group->add_group_field( $group_field_id, array(
+		'name'    => __( 'Text color', 'seo-slider' ),
+		'id'      => $prefix . 'text',
+		'type'    => 'colorpicker',
+		'default' => apply_filters( 'seo_slider_default_text', '#ffffff' ),
+		'options' => array(
+			'alpha' => true,
+		),
+	) );
+
 	/**
 	 * Initiate the metabox for slider settings.
 	 *
