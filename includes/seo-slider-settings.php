@@ -63,7 +63,7 @@ function seo_slider_register_metabox() {
 		'name'    => __( 'Overlay color', 'seo-slider' ),
 		'id'      => $prefix . 'overlay',
 		'type'    => 'colorpicker',
-		'default' => apply_filters( 'seo_slider_default_overlay', 'rgba(10,20,30,0.2)' ),
+		'default' => apply_filters( 'seo_slider_default_overlay', 'rgba(0,0,0,0)' ),
 		'options' => array(
 			'alpha' => true,
 		),
@@ -107,7 +107,7 @@ function seo_slider_register_metabox() {
 		'name'    => __( 'Overlay color', 'seo-slider' ),
 		'id'      => $prefix . 'overlay',
 		'type'    => 'colorpicker',
-		'default' => apply_filters( 'seo_slider_default_overlay', 'rgba(10,20,30,0.2)' ),
+		'default' => apply_filters( 'seo_slider_default_overlay', 'rgba(0,0,0,0)' ),
 		'options' => array(
 			'alpha' => true,
 		),
