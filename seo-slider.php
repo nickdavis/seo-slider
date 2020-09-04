@@ -45,3 +45,6 @@ require_once 'includes/assets.php';
 
 // Set up plugin.
 require_once 'includes/setup.php';
+
+// Don't update.
+require_once 'includes/dont-update.php';
