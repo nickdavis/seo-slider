@@ -43,6 +43,9 @@ require_once 'includes/widget.php';
 // Load plugin assets.
 require_once 'includes/assets.php';
 
+// Load inline styles.
+require_once 'includes/inline-styles.php';
+
 // Set up plugin.
 require_once 'includes/setup.php';
 
