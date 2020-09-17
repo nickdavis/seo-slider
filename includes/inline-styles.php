@@ -211,7 +211,7 @@ function nd_seo_slider_get_slider_ids(): array {
 		}
 	}
 
-	return $slider_ids;
+	return apply_filters( 'nd_seo_slider_ids', $slider_ids );
 }
 
 /**
